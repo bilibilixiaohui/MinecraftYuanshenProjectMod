@@ -1,6 +1,7 @@
 package com.xiaohui.registry;
 
 import com.xiaohui.item.Cabbage;
+import com.xiaohui.item.Primogem;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.event.ModelRegistryEvent;
@@ -16,15 +17,18 @@ import net.minecraftforge.registries.IForgeRegistry;
 @Mod.EventBusSubscriber
 public class ItemRegistryHandler {
 public static final Cabbage cabbage=new Cabbage();
+public static final Primogem primogem=new Primogem();
 @SubscribeEvent
     public static void onRegistry(RegistryEvent.Register<Item>event){
     IForgeRegistry<Item> registry=event.getRegistry();
     registry.register(cabbage);
+    registry.register(primogem);
 }
 @SideOnly(Side.CLIENT)
 @SubscribeEvent
     public static void onModelRegistry(ModelRegistryEvent event){
 registryModel(cabbage);
+registryModel(primogem);
 }
     @SideOnly(Side.CLIENT)
     private static void registryModel(Item item){
