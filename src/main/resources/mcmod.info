@@ -1,0 +1,16 @@
+[
+{
+  "modid": "yuanshenproject",
+  "name": "YuanshenProject",
+  "description": "Players by Yuanshen's.Copyrighted by xiaohui.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "https://space.bilibili.com/398497252",
+  "updateUrl": "",
+  "authorList": ["XiaoHui"],
+  "credits": "",
+  "logoFile": "assets/yuanshenproject/textures/logo.png",
+  "screenshots": [],
+  "dependencies": []
+}
+]
